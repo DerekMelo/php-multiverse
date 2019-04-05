@@ -9,3 +9,5 @@ RUN echo "deb http://security.debian.org/debian-security jessie/updates main" >>
     apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install libssl1.0.0
 RUN pecl install pdo_sqlsrv-5.2.0
 RUN echo extension=pdo_sqlsrv.so >> /opt/docker/etc/php/php.webdevops.ini
+
+EXPOSE 22
